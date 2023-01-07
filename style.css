@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+html{
+    font-size: 16px;
+    
+    
+}
+
+body{
+    background-image: url("resources/best-background-for-website-02.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    opacity : 0.7;
+    position: relative;
+    transition : opacity 1s ease; 
+    
+   
+}
+
+
+
+.loaded {
+ opacity : 1;
+}
+
+
+
+.circle{
+
+    background-color: transparent;
+    border-radius: 50px;
+    box-shadow: 3px 3px lightgray , -1em 0 .4em lightgray;
+     height: 50px;
+    width: 50px;
+    margin:15px;
+    position: relative;
+    display: inline-block;
+}
+
+  
+
+ .container {
+    display: grid;
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    z-index: 2;
+    gap: 1px;
+    grid-template-areas:"header"
+                        "nav"
+                        "section"
+                        "footer";
+    grid-template-columns:1fr;
+    grid-template-rows:20% 10% 60% 10%;
+    top:10%;
+    left:13%;
+    /* grid-template-columns: 1fr;  
+    grid-template-rows: '25% 10% 50% 15%'; */
+    
+      
+    }
+  
+  h1, h2 {
+    font-family: monospace;
+    text-align: center;
+  }
+  .container > * {
+    
+    background-color:azure;
+    filter: opacity(99%);
+  }
+
+  header {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    grid-area:header;
+    display: flex;
+    z-index: 1;
+    justify-content: flex-end;
+    
+
+    
+    
+  }
+
+  header img{
+      margin: 10px;
+    
+  }
+  header h2{
+    margin: 50px;
+  }
+
+  nav {
+    grid-area:nav;
+}
+
+   nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+   }
+    li{
+     
+     text-decoration: underline;
+     text-decoration-color: transparent; 
+     transition: 0.2s;
+     list-style-type: none;
+     font-size: 1.5rem;
+     cursor: hand;
+
+   }
+    li:hover{
+      text-decoration-color: black;
+      cursor: pointer;
+    }
+
+
+  section{
+    grid:section;
+  }
+   
+    #who, #projects{
+    font-size: 2em ;
+    padding: 25px;
+    font-family: 'Open Sans', sans-serif;
+   }
+   
+   #contact{
+    padding:5px;
+   }
+
+
+   footer{
+    grid-area:footer;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  
+  .fa {
+    padding: 20px;
+    width:10em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2em;
+    transition: width 0.5s;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+    width:11em;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  
+  .fa-twitter {
+    background: #3B5998;
+    color: white;
+  }
+  
+  
+  .fa-github {
+    background: black;
+    color: white;
+  }
+
+  .fa-youtube{
+     background-color: red;
+     color: white;
+     }
+
+  .fa-youtube{
+    background-color: red;
+    color: white;
+    }
+
+  .fa-linkedin{
+    background-color: #0e76a8; 
+    color:white;
+   }
+   
+   form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: lightslategray;
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  @media only screen and (max-width: 580px) {
+
+   
+
+  
+}
+
+@media only screen and (min-width: 650px) {
+
+
+    
+
+
+}    
+
+
+
+
+@media only screen and (max-width: 1250px) {
+
+  .circle{
+    display: none;
+  } 
+
+  #who, #projects{
+    font-size: 1.50em ;
+    padding: 20px;
+    align-content: center;
+    
+   }
+   .container{
+    position: relative;
+    top: 50px;
+    left:50px;
+    width: 1000px;
+    height: 850px;
+    grid-template-rows:20% 5% 50% 5%;  
+   }
+   
+   header h2{
+    margin: 30px;
+  }
+  .fa{
+    width: 9em;
+    padding: 10px;
+  }  
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+  #who, #projects{
+    font-size: 1,25em ;
+    padding: 20px;
+    align-content: center;
+   }
+   .container{
+       
+    width: 450px;
+    height:  1000px;
+    grid-template-rows:10% 10% 45% 20%;  
+   }
+   header{
+      
+   }
+   header h2{
+    margin: 30px;
+    display: none;
+  }
+  header img{
+    width: 60%;
+    height: 90%;
+  }
+  .fa{
+    width: 20em;
+  }  
+  ul{
+    flex-direction: column;
+  }
+  li{
+     font-size: 25px;
+  } 
+  footer{
+    flex-direction: column;
+  }
+  
+
+  
+  
+
+
+
+
+
+}    
+
+
