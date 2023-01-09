@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
  function circleExists(event) {
    setTimeout(() => {
     event.target.style.visibility = 'visible';
@@ -61,12 +71,4 @@ overedCircles.forEach( circle =>{
    whoAmI.style.display = "none";
    project.style.display = "none";
     });
-
-
-
-
-
-
-
-
 
