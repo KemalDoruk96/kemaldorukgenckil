@@ -29,6 +29,8 @@ overedCircles.forEach( circle =>{
 
 });
      
+   contact.style.display = "none";
+   project.style.display = "none";
 
   let whoAmI = document.getElementById('who');
   let project = document.getElementById('projects');
@@ -49,6 +51,9 @@ overedCircles.forEach( circle =>{
    project.style.display = "none";
    });
 
+
+   /*
+
   
    listItems[1].addEventListener("click", () => {
    project.style.display = "block";
@@ -65,7 +70,7 @@ overedCircles.forEach( circle =>{
 
 
 
-
+    */
 
 
 
