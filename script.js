@@ -52,7 +52,7 @@ overedCircles.forEach( circle =>{
    });
 
 
-   /*
+
 
   
    listItems[1].addEventListener("click", () => {
@@ -70,7 +70,7 @@ overedCircles.forEach( circle =>{
 
 
 
-    */
+   
 
 
 
