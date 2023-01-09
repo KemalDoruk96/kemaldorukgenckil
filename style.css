@@ -235,7 +235,12 @@ body{
   }
   
   
-  @media only screen and (max-width: 1200px) and (min-width: 992px) {
+  
+
+
+
+
+@media only screen and (max-width: 1250px) {
 
   .circle{
     display: none;
@@ -267,7 +272,7 @@ body{
 }
 
 
-@media only screen and (max-width: 600px) and (min-width: 400px) {
+@media only screen and (max-width: 650px) {
 
   #who, #projects{
     font-size: 1,25em ;
@@ -310,4 +315,4 @@ body{
 
 
 
-}       
+}    
