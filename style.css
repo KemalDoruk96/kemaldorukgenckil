@@ -53,8 +53,7 @@ body{
     grid-template-rows:20% 10% 60% 10%;
     top:10%;
     left:13%;
-    /* grid-template-columns: 1fr;  
-    grid-template-rows: '25% 10% 50% 15%'; */
+    
     
       
     }
@@ -236,6 +235,20 @@ body{
   }
   
   
+  @media only screen and (max-width: 580px) {
+
+   
+
+  
+}
+
+@media only screen and (min-width: 650px) {
+
+
+    
+
+
+}    
 
 
 
@@ -285,9 +298,7 @@ body{
     height:  1000px;
     grid-template-rows:10% 10% 45% 20%;  
    }
-   header{
-      
-   }
+   
    header h2{
     margin: 30px;
     display: none;
@@ -309,4 +320,12 @@ body{
     flex-direction: column;
   }
   
-}    
+
+  
+  
+
+
+
+
+
+}       
