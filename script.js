@@ -1,14 +1,4 @@
-
-
-
-
-
-
-
-
-
-
- function circleExists(event) {
+function circleExists(event) {
    setTimeout(() => {
     event.target.style.visibility = 'visible';
   }, 500);
