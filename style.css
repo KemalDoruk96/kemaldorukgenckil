@@ -235,7 +235,7 @@ body{
   }
   
   
-  @media only screen (min-width: 650px) and (max-width: 1250px) {
+  @media only screen and (min-width: 651px) and (max-width: 1250px) {
 
   .circle{
     display: none;
@@ -302,13 +302,7 @@ body{
     flex-direction: column;
   }
   
-@media only screen and (min-width: 650px) {
 
-
-    
-
-
-}    
   
   
 
