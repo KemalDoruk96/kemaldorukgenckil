@@ -23,18 +23,25 @@
         <nav>
             <ul>
                 <li>Who am I </li>
-                <li style="display:none">My Projects</li>
+                <li>My Projects</li>
                 <li style="display:none">Contact</li>
             </ul>
         </nav>
         <section>
             <div id="who">
             Hello, I'm Kemal Doruk, I've been coding for the last year. I graduated from Ankara University as a computer programmer with the highest grade point average and also signed up for Codecademy Pro as a full-stack developer to improve my coding skills.
-            The codding languages I've worked with are JavaScript, React, and Java.
+            The codding languages I've worked with are JavaScript and React.
            </div>
            <div id="projects">
-            I don't have a fully completed project yet
-           </div>
+            <div class="card-slider">
+              <input type="radio" id="1" name="sld"/>
+              <label for="1">1</label>
+              <input type="radio" id="2" name="sld"/>
+              <label for="2">2</label>
+              <input type="radio" id="3" name="sld" checked/>
+              <label for="3">3</label>
+              
+            </div>
            <div id="contact">
             <form action="/submit-form" method="post">
                 <label for="name">Name:</label><br>

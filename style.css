@@ -1,311 +1,416 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
-html{
-    font-size: 16px;
-    
-    
+
+html {
+  font-size: 16px;
+
+
 }
 
-body{
-    background-image: url("resources/best-background-for-website-02.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    opacity : 0.7;
-    position: relative;
-    transition : opacity 1s ease; 
-    
-   
+body {
+  background-image: url("resources/best-background-for-website-02.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+  position: relative;
+  transition: opacity 1s ease;
+  margin: 0;
+
 }
 
 
 
 .loaded {
- opacity : 1;
+  opacity: 1;
 }
 
 
 
-.circle{
+.circle {
 
-    background-color: transparent;
-    border-radius: 50px;
-    box-shadow: 3px 3px lightgray , -1em 0 .4em lightgray;
-     height: 50px;
-    width: 50px;
-    margin:15px;
-    position: relative;
-    display: inline-block;
+  background-color: transparent;
+  border-radius: 50px;
+  box-shadow: 3px 3px lightgray, -1em 0 .4em lightgray;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  position: relative;
+  display: inline-block;
 }
 
-  
 
- .container {
-    display: grid;
-    width: 70%;
-    height: 80%;
-    position: absolute;
-    z-index: 2;
-    gap: 1px;
-    grid-template-areas:"header"
-                        "nav"
-                        "section"
-                        "footer";
-    grid-template-columns:1fr;
-    grid-template-rows:20% 10% 60% 10%;
-    top:10%;
-    left:13%;
+
+.container {
+  display: grid;
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  z-index: 2;
+  gap: 1px;
+  grid-template-areas: "header"
+    "nav"
+    "section"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 10% 60% 10%;
+  top: 10%;
+  left: 13%;
+  width: 90%;
+  left: 5%;
+
+
+}
+
+h1,
+h2 {
+  font-family: monospace;
+  text-align: center;
+}
+
+.container>* {
+
+  background-color: azure;
+  filter: opacity(99%);
+}
+
+header {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  grid-area: header;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+
+
+
+
+}
+
+header img {
+  margin: 5px;
+  height: 90%;
+  width:25%;
+
+}
+
+header h2 {
+  margin: 20px 0;
+}
+
+nav {
+  grid-area: nav;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+
+}
+
+li {
+
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 0.2s;
+  list-style-type: none;
+  font-size: 2rem;
+  cursor: hand;
+
+}
+
+li:hover {
+  text-decoration-color: black;
+  cursor: pointer;
+}
+
+
+section {
+  grid: section;
+}
+
+#who,
+#projects {
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+
+#contact {
+  padding: 5px;
+}
+
+
+footer {
+  grid-area: footer;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.fa {
+  padding: 20px;
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2em;
+  transition: width 0.5s;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  width: 11em;
+}
+
+/* Set a specific color for each brand */
+
+
+.fa-twitter {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.fa-youtube {
+  background-color: red;
+  color: white;
+}
+
+.fa-youtube {
+  background-color: red;
+  color: white;
+}
+
+.fa-linkedin {
+  background-color: #0e76a8;
+  color: white;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: lightslategray;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.card-slider{
+  margin: 60px auto;
+  text-align: center;
+}
+label {
+  position: relative;
+  margin: 0 -35px;
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  line-height: 200px;
+  color: #ddd;
+  font-size: 2em;
+  border-radius: 5px;
+  box-shadow: 0 10px 6px -6px #777;
+  -webkit-transform: skew(-20deg) rotate(-20deg);
+          transform: skew(-20deg) rotate(-20deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+label:nth-of-type(1) {
+  background: #1abc9c;
+}
+ 
+label:nth-of-type(2) {
+  background: #3498db;
+}
+ 
+label:nth-of-type(3) {
+  background: #e67e22;
+}
+ 
+label:nth-of-type(4) {
+  background: #9b59b6;
+}
+ 
+label:nth-of-type(5) {
+  background: #f1c40f;
+}
+input[type="radio"] {
+  display: none;
+}
+ 
+input[type="radio"]:checked ~ label {
+  -webkit-transform: skew(20deg) rotate(20deg);
+          transform: skew(20deg) rotate(20deg);
+}
+ 
+input[type="radio"]:checked + label {
+  margin: 0 50px;
+  -webkit-transform: none;
+          transform: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    
-      
-    }
-  
-  h1, h2 {
-    font-family: monospace;
-    text-align: center;
-  }
-  .container > * {
-    
-    background-color:azure;
-    filter: opacity(99%);
   }
 
   header {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    grid-area:header;
     display: flex;
-    z-index: 1;
-    justify-content: flex-end;
-    
-
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
   }
 
-  header img{
-      margin: 10px;
-    
-  }
-  header h2{
-    margin: 50px;
+  nav ul {
+    flex-direction: column;
+    margin-bottom: 2rem;
   }
 
-  nav {
-    grid-area:nav;
+  li {
+    font-size: 5rem;
+  }
+
+  .fa {
+    margin: 5px;
+  }
+
+  header img {
+    display: none ;
+    
+  }
+
+  .container {
+    display: flex;
+    width: 95%;
+    height: 100% !important;
+    left: 1%;
+    flex-direction: column;
+    flex-basis: auto;
+  }
+  label{
+    width: 150px;
+    height: 200px;
+  }
 }
 
-   nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
 
+@media screen and (max-width: 400px) {
+
+  body{
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #who,
+  #projects {
+    font-size: 1rem;
+    padding: 10px;
     
-   }
-    li{
-     
-     text-decoration: underline;
-     text-decoration-color: transparent; 
-     transition: 0.2s;
-     list-style-type: none;
-     font-size: 3.5rem;
-     cursor: hand;
-
-   }
-    li:hover{
-      text-decoration-color: black;
-      cursor: pointer;
-    }
-
-
-  section{
-    grid:section;
-  }
-   
-    #who, #projects{
-    font-size: 2em ;
-    padding: 25px;
-    font-family: 'Open Sans', sans-serif;
-   }
-   
-   #contact{
-    padding:5px;
-   }
-
-
-   footer{
-    grid-area:footer;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  
-  .fa {
-    padding: 20px;
-    width:10em;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 2em;
-    transition: width 0.5s;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
-    width:11em;
-  }
-  
-  /* Set a specific color for each brand */
-  
-  
-  .fa-twitter {
-    background: #3B5998;
-    color: white;
-  }
-  
-  
-  .fa-github {
-    background: black;
-    color: white;
-  }
-
-  .fa-youtube{
-     background-color: red;
-     color: white;
-     }
-
-  .fa-youtube{
-    background-color: red;
-    color: white;
-    }
-
-  .fa-linkedin{
-    background-color: #0e76a8; 
-    color:white;
-   }
-   
-   form {
-    width: 50%;
-    margin: 0 auto;
-    text-align: left;
-    box-shadow: lightslategray;
     
   }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"], input[type="email"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 100px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
-  }
-  
-  input[type="submit"] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
-  
- @media (max-width: 400px) { 
-  
 
-  #who, #projects{
-    font-size: 1px ;
-    padding: 5px;
-    align-content: center;
-   }
-   
-   .container{
+
+  .container {
     display: flex;
     flex-direction: column;
     flex-basis: auto;
-   }
-   
-   header{
-    flex-direction: column;
-   }
-
-   header h2{
-    margin: 30px;
-    display: none;
+    width: 90%;
+    left: 5%;
+    font-size: 1rem;
   }
-  header img{
-    width: 80%;
-    height: 45%;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h2 {
+    margin: 30px;
     
   }
-  .fa{
+
+  header img {
+    display: none !important;
+    
+  }
+
+  .fa {
     width: 20em;
     margin: 5px;
-  }  
-  ul{
-    flex-direction: column;
-    
   }
-  li{
-     font-size: 25px;
-     
-  } 
-  footer{
+
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    font-size: 25px;
+  }
+
+  footer {
     align-items: flex-start;
   }
- 
-
-}
-@media (max-width:1100px) {
-  
-  body{
-    background-color: black;
-    
+  label{
+    width: 100px;
+    height: 150px;
   }
-  
-  .circle{
-    display: none;
-  } 
-
-  #who, #projects{
-    font-size: 1.50em ;
-    padding: 20px;
-    align-content: center;
-    
-   }
-   
-   header h2{
-    margin: 30px;
-  }
-  .fa{
-    width: 9em;
-    padding: 10px;
-  }  
-
 }
-
