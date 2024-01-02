@@ -90,7 +90,7 @@ header {
 header img {
   margin: 5px;
   height: 90%;
-  width:25%;
+  width:10%;
 
 }
 
@@ -251,6 +251,13 @@ input[type="submit"]:hover {
   margin: 60px auto;
   text-align: center;
 }
+a{
+  text-decoration: none;
+  cursor:pointer;
+}
+a:hover{
+  font-weight:bold ;
+}
 label {
   position: relative;
   margin: 0 -35px;
@@ -258,8 +265,8 @@ label {
   width: 200px;
   height: 250px;
   line-height: 200px;
-  color: #ddd;
-  font-size: 2em;
+  color: #574949;
+  font-size: 1.5em;
   border-radius: 5px;
   box-shadow: 0 10px 6px -6px #777;
   -webkit-transform: skew(-20deg) rotate(-20deg);
@@ -268,11 +275,15 @@ label {
   transition: .3s;
 }
 label:nth-of-type(1) {
-  background: #1abc9c;
+  background-image: url("./resources/reddithot.png");
+  background-size: cover;
+  background-color: #1abc9c;
 }
  
 label:nth-of-type(2) {
-  background: #3498db;
+  background-image: url("./resources/petlover.png");
+  background-size: cover;
+  background-color: #3498db;
 }
  
 label:nth-of-type(3) {
@@ -288,6 +299,7 @@ label:nth-of-type(5) {
 }
 input[type="radio"] {
   display: none;
+  
 }
  
 input[type="radio"]:checked ~ label {

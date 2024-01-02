@@ -14,7 +14,7 @@ document.body.onload = function() {
   document.body.classList.add('loaded');
 };
 
-for(let i=0; i < 253; i++){
+for(let i=0; i < 276; i++){
   let circle = document.createElement('div');
   circle.classList.add('circle');
   document.body.appendChild(circle);
